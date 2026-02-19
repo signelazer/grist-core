@@ -26,6 +26,8 @@ import { Spinner } from "app/client/widgets/Spinner";
 import { ToggleCheckBox, ToggleSwitch } from "app/client/widgets/Toggle";
 import { getWidgetConfiguration } from "app/client/widgets/UserType";
 import { GristType } from "app/plugin/GristData";
+import {RichTextBox} from 'app/client/widgets/RichTextBox';
+import {RichTextEditor} from 'app/client/widgets/RichTextEditor';
 
 /**
  * Convert the name of a widget to its implementation.
@@ -56,6 +58,8 @@ export const nameToWidget = {
   AttachmentsWidget: AttachmentsWidget,
   AttachmentsEditor: AttachmentsEditor,
   DateTimeEditor: DateTimeEditor,
+  RichTextBox: RichTextBox,
+  RichTextEditor: RichTextEditor,
 };
 
 export interface WidgetConstructor { create: (...args: any[]) => NewAbstractWidget }

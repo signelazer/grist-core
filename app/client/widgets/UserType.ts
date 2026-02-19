@@ -84,6 +84,15 @@ export const typeDefs: any = {
           wrap: undefined,
         },
       },
+      RichText: {
+        cons: "RichTextBox",
+        editCons: "RichTextEditor",
+        icon: "FieldTextbox",
+        options: {
+          alignment: "left",
+          wrap: undefined,
+        },
+      },
     },
     default: "TextBox",
   },
@@ -308,5 +317,5 @@ export const typeDefs: any = {
 };
 
 // Extract widgets type to a type from the json above
-export type WidgetType = "TextBox" | "Markdown" | "HyperLink" | "Spinner" |
+export type WidgetType = "TextBox" | "Markdown" | "HyperLink" | "RichText" | "Spinner" |
   "CheckBox" | "Switch" | "Reference" | "Attachments";
