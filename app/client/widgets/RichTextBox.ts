@@ -37,8 +37,8 @@ export class RichTextBox extends NTextBox {
 }
 
 /**
- * Basic HTML sanitizer that only allows safe inline tags.
- * For production, consider using DOMPurify instead:
+ * Basic HTML sanitizer — only allows safe inline formatting tags.
+ * For production, consider using DOMPurify:
  *   yarn add dompurify && yarn add -D @types/dompurify
  */
 function sanitizeHtml(html: string): string {
