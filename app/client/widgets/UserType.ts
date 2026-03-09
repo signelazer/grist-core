@@ -93,6 +93,15 @@ export const typeDefs: any = {
           wrap: undefined,
         },
       },
+      TimePicker: {
+        cons: "TimeTextBox",
+        editCons: "TimeEditor",
+        icon: "FieldDate",
+        options: {
+          alignment: "left",
+          wrap: undefined,
+        },
+      },
     },
     default: "TextBox",
   },
@@ -317,5 +326,5 @@ export const typeDefs: any = {
 };
 
 // Extract widgets type to a type from the json above
-export type WidgetType = "TextBox" | "Markdown" | "HyperLink" | "RichText" | "Spinner" |
+export type WidgetType = "TextBox" | "Markdown" | "HyperLink" | "RichText" | "TimePicker" | "Spinner" |
   "CheckBox" | "Switch" | "Reference" | "Attachments";

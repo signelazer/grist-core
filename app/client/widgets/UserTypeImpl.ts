@@ -28,6 +28,9 @@ import { getWidgetConfiguration } from "app/client/widgets/UserType";
 import { GristType } from "app/plugin/GristData";
 import {RichTextBox} from 'app/client/widgets/RichTextBox';
 import {RichTextEditor} from 'app/client/widgets/RichTextEditor';
+import {TimeTextBox} from 'app/client/widgets/TimeTextBox';
+import {TimeEditor} from 'app/client/widgets/TimeEditor';
+
 
 /**
  * Convert the name of a widget to its implementation.
@@ -60,6 +63,8 @@ export const nameToWidget = {
   DateTimeEditor: DateTimeEditor,
   RichTextBox: RichTextBox,
   RichTextEditor: RichTextEditor,
+  TimeTextBox: TimeTextBox,
+  TimeEditor: TimeEditor,
 };
 
 export interface WidgetConstructor { create: (...args: any[]) => NewAbstractWidget }
