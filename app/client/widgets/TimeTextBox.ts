@@ -24,9 +24,9 @@ export class TimeTextBox extends NTextBox {
           return "";
         }
         const str = String(raw);
-        // Validate HH:MM format
-        if (/^\d{2}:\d{2}$/.test(str)) {
-          return str;
+        // Display empty for 00:00 (default/unset value)
+        if (str === "00:00") {
+          return "";
         }
         return str;
       }),

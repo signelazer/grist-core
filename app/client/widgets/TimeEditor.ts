@@ -132,7 +132,9 @@ export class TimeEditor extends NewBaseEditor {
   }
 
   public getCellValue(): CellValue {
-    return this._getValueStr();
+    const val = this._getValueStr();
+    // Treat 00:00 as empty (no value set)
+    return val === "00:00" ? "" : val;
   }
 
   public getTextValue(): string {
