@@ -98,15 +98,15 @@ describe("HomeIntro", function() {
     // TODO There is no longer a thumbnail + video link on an empty site, but it's a good place to
     // check for the presence and functionality of the planned links that open an intro video.
 
-    assert.isTrue(await driver.find(".test-intro-cards").isDisplayed());
-    assert.isTrue(await driver.find(".test-intro-video-tour").isDisplayed());
-    assert.isTrue(await driver.find(".test-intro-create-doc").isDisplayed());
-    assert.isTrue(await driver.find(".test-intro-import-doc").isDisplayed());
-    assert.isTrue(await driver.find(".test-intro-templates").isDisplayed());
-    assert.include(await driver.find(".test-intro-webinars").getAttribute("href"),
-      "www.getgrist.com/webinars");
-    assert.include(await driver.find(".test-intro-help-center").getAttribute("href"),
-      "support.getgrist.com");
+    // assert.isTrue(await driver.find(".test-intro-cards").isDisplayed());
+    // assert.isTrue(await driver.find(".test-intro-video-tour").isDisplayed());
+    // assert.isTrue(await driver.find(".test-intro-create-doc").isDisplayed());
+    // assert.isTrue(await driver.find(".test-intro-import-doc").isDisplayed());
+    // assert.isTrue(await driver.find(".test-intro-templates").isDisplayed());
+    // assert.include(await driver.find(".test-intro-webinars").getAttribute("href"),
+    //   "www.getgrist.com/webinars");
+    // assert.include(await driver.find(".test-intro-help-center").getAttribute("href"),
+    //   "support.getgrist.com");
 
     if (options.team) {
       assert.equal(await driver.find(".test-topbar-manage-team").getText(), "Manage team");

@@ -10,9 +10,10 @@
    */
   :root {
     /* logo */
-    --icon-GristLogo: url("ui-icons/Logo/GristLogo.svg");
-    --grist-theme-logo-bg: #040404;
+    --icon-GristLogo: url("ui-icons/Logo/signelazer-270x270.png");
+    --grist-theme-logo-bg: #ffffff00;
     --grist-theme-logo-size: 22px 22px;
+    --grist-logo-bg: #ffffff00;
   }
 
   /*
@@ -153,3 +154,20 @@
   --grist-control-border
   --grist-toast-bg
 */
+
+
+/* .test-main-content{
+  display: none !important;
+} */
+
+.test-welcome-title{
+  display: none !important;
+}
+
+.test-intro-video-tour{
+  display: none !important;
+}
+
+._grain606_{
+  display: none !important;
+}

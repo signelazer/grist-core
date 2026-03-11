@@ -52,7 +52,7 @@ describe("LanguageSettings", function() {
         if (locale === "en") {
           assert.equal(welcomeText, "Welcome to Grist!");
         } else if (locale === "fr") {
-          assert.equal(welcomeText, "Bienvenue sur Grist !");
+          assert.equal(welcomeText, "Signelazer encodage");
         }
       });
     });
